@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y software-properties-common && \
     python-minimal locales python-lxml qbittorrent-nox nginx gettext-base xz-utils \
     # Open VPN
     libssl-dev libssl1.1 \
-    python3-pip \
+    python3-pip openvpn unzip \
     build-essential git pkg-config autoconf autoconf-archive libglib2.0-dev libjsoncpp-dev uuid-dev liblz4-dev libcap-ng-dev libxml2-utils python3-minimal python3-dbus python3-docutils python3-jinja2 libxml2-utils libtinyxml2-dev policykit-1 libsystemd-dev python3-systemd \
     libnl-3-dev libnl-genl-3-dev protobuf-compiler libprotobuf-dev \
     # install extraction tools
