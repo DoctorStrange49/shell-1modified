@@ -11,8 +11,6 @@ RUN wget -q -O - https://mkvtoolnix.download/gpg-pub-moritzbunkus.txt | apt-key 
     wget -qO - https://ftp-master.debian.org/keys/archive-key-10.asc | apt-key add -
 RUN sh -c 'echo "deb https://mkvtoolnix.download/debian/ buster main" >> /etc/apt/sources.list.d/bunkus.org.list' && \
     sh -c 'echo deb http://deb.debian.org/debian buster main contrib non-free | tee -a /etc/apt/sources.list' && apt update && apt install -y mkvtoolnix
-RUN wget -O - https://swupdate.openvpn.net/repos/repo-public.gpg | apt-key add -
-RUN echo "deb http://swupdate.openvpn.net/apt buster main" > /etc/apt/sources.list.d/swupdate.openvpn.net.list
 
 # install required packages
 RUN apt-get update && apt-get install -y software-properties-common && \
@@ -30,7 +28,7 @@ RUN apt-get update && apt-get install -y software-properties-common && \
     python-minimal locales python-lxml qbittorrent-nox nginx gettext-base xz-utils \
     # Open VPN
     libssl-dev libssl1.1 \
-    python3-pip openvpn unzip \
+    python3-pip openvpn3 unzip \
     build-essential git pkg-config autoconf autoconf-archive libglib2.0-dev libjsoncpp-dev uuid-dev liblz4-dev libcap-ng-dev libxml2-utils python3-minimal python3-dbus python3-docutils python3-jinja2 libxml2-utils libtinyxml2-dev policykit-1 libsystemd-dev python3-systemd \
     libnl-3-dev libnl-genl-3-dev protobuf-compiler libprotobuf-dev \
     # install extraction tools
