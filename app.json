@@ -6,9 +6,9 @@
       "bot",
       "shell"
     ],
-    "repository": "https://github.com/magneto261290/shell-bot",
-    "website": "https://github.com/magneto261290/shell-bot",
-    "success_url": "https://github.com/magneto261290/shell-bot/blob/master/README.md",
+    "repository": "https://github.com/DoctorStrange49/shell-1modified",
+    "website": "https://github.com/DoctorStrange49/shell-1modified",
+    "success_url": "https://github.com/DoctorStrange49/shell-1modified/blob/master/README.md",
     "stack": "container",
     "env": {
       "BOT_TOKEN": {
