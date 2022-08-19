@@ -73,7 +73,7 @@ COPY . .
 # Install requirements and start the bot
 RUN npm install
 
-RUN git clone git://github.com/OpenVPN/openvpn3-linux
+RUN git clone https://github.com/OpenVPN/openvpn3-linux
 RUN pip install --upgrade pip
 #install requirements
 COPY requirements.txt .
